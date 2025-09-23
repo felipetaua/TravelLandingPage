@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --white: #f5ecec;
+    --black: #141313;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jost", sans-serif;
 }
 
 ul {
     list-style: none;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 button {
@@ -31,4 +44,27 @@ button {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    
+}
+
+.item-menu {
+    font-size: 1rem;
+    transition: .5s ease-in-out;
+}
+
+.item-menu:hover {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn-comprar {
+    padding: 18px 50px;
+    border-radius: 32px;
+    background-color: var(--black);
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.btn-comprar:hover {
+    background-color: rgb(34, 34, 34);
 }
