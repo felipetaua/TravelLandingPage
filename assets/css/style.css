@@ -32,7 +32,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 6%;
+    padding: 8px 6%;
 }
 
 .logo  {
@@ -58,7 +58,7 @@ button {
 }
 
 .btn-comprar {
-    padding: 18px 50px;
+    padding: 12px 45px;
     border-radius: 32px;
     background-color: var(--black);
     font-size: 1rem;
@@ -67,4 +67,24 @@ button {
 
 .btn-comprar:hover {
     background-color: rgb(34, 34, 34);
+}
+
+.menu-hamburguer {
+    display: none;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-hamburguer {
+        display: block;
+        font-size: 24px;
+    }
+
+    .btn-comprar {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
 }
