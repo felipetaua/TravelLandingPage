@@ -204,8 +204,17 @@ button {
 }
 
 .more-btn {
-    width: 80%;
+    width: 70%;
     margin: 0 0 0 auto;
+    transition: 1s ease-in-out;
+    font-weight: bold;
+    color: var(--primary);
+    border-radius: 12px;
+    border: 1.5px solid #c3c4c5;
+}
+
+.more-btn:hover {
+    background: linear-gradient( 90deg,#ffffff, #c1cde3, #93c2ed);  
 }
 
 .btn-group {
@@ -215,11 +224,13 @@ button {
 .btn-action {
     background-color: var(--primary);
     color: var(--white);
-    transition: .5s ease-in-out;;
+    transition: .5s ease-in-out;
 }
 
 .btn-action:hover {
-    background-color: rgb(47, 69, 128);
+    background-color: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .btn-play {
@@ -270,5 +281,8 @@ button {
         border-radius: 16px;
     }
 
+    .more-btn {
+        margin: 0 auto;
+    }
 
 }
