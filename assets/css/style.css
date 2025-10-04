@@ -263,7 +263,7 @@ button {
     }
 
     .airplane-img {
-        display: fixed;
+        display: absolute;
         top: 90%;
         right: 0%; 
     }
@@ -285,4 +285,16 @@ button {
         margin: 0 auto;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper-more {
+        display: block;
+        text-align: center;
+    }
+
+    .airplane-img {
+        display: absolute;
+        top: 95%;
+    }
 }
