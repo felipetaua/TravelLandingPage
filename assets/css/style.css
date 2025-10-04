@@ -2,6 +2,8 @@
 
 :root {
     --white: #f5ecec;
+    --white-10: rgba(245, 236, 236, 0.781);
+
     --black: #141313;
 
     --primary: #0038a8;
@@ -101,6 +103,7 @@ button {
         position: fixed;
         top: 0;
         right: -100%;
+        z-index: 999;
 
         transition: right 0.3s ease-in-out;
     }
@@ -164,7 +167,45 @@ button {
 }
 
 .more {
-    background-color: var(--white);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px 0 0 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.local-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: -30px;
+    border: 2px solid var(--white);
+    transition: .5s ease-in-out;   
+    filter: brightness(90%);
+}
+
+.local-avatar:hover {
+    transform: scale(1.05);
+    border: 2px solid #fff;
+    filter: brightness(100%);
+}
+
+.wrapper-more {
+    display: flex;
+    align-items: center;
+}
+
+.more-content {
+    padding: 20px 20px 20px 40px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.more-btn {
+    width: 80%;
+    margin: 0 0 0 auto;
 }
 
 .btn-group {
@@ -197,4 +238,37 @@ button {
 
 .btn-play i {
     font-size: 18px;
+}
+
+@media screen and (max-width: 900px)  {
+    .hero-section {
+        display: block;
+    }
+
+    .content-hero {
+        width: 100%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .airplane-img {
+        display: fixed;
+        top: 90%;
+        right: 0%; 
+    }
+
+    .content-more {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        margin: 0 auto;
+    }
+    
+    .more {
+        border-radius: 16px;
+    }
+
+
 }
