@@ -299,3 +299,71 @@ button {
         top: 95%;
     }
 }
+
+
+/* sessão socials */
+
+.section-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4% 2%;
+}
+
+.partners-img {
+    width: 10%;
+    filter: grayscale(100%);
+    transition: 1s ease-in-out;
+}
+
+.partners-img:hover {
+    filter: grayscale(0%);
+}
+
+.content-socials {
+    padding: 10px 40px;
+    border: 1px solid #d6d6d6;
+    -webkit-box-shadow: 8px 8px 18px 4px #D6D6D6; 
+    box-shadow: 8px 8px 18px 4px #D6D6D6;
+    border-radius: 32px;
+}
+
+.content-socials i {
+    font-size: 24px;
+    padding: 5px;
+    width: 40px;
+    border: 1px solid #222;
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+    text-align: center; 
+    -webkit-box-shadow: 8px 8px 10px 0px rgba(214,214,214,0.58); 
+    box-shadow: 8px 8px 10px 0px rgba(214,214,214,0.58);
+}
+
+.content-socials i:hover {
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+}
+
+.content-socials .fa-whatsapp:hover {
+    background-color: #25D366;
+}
+
+.content-socials .fa-instagram:hover {
+    background-color: #E4405F;
+}
+
+.content-socials .fa-facebook:hover {
+    background-color: #1877F2;
+}
+
+.content-socials .fa-phone-volume:hover {
+    background-color: #881a9e;
+}
+
+
+.content-socials p {
+    display: inline-block;
+}
