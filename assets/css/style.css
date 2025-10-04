@@ -135,7 +135,8 @@ button {
 }
 
 .airplane-img {
-    position: fixed;
+    position: absolute;
+    z-index: 1;
     top: 38%;
     right: -33%;
     transform: translateY(-50%);
