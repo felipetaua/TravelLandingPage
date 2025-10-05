@@ -264,9 +264,7 @@ button {
     }
 
     .airplane-img {
-        display: absolute;
-        top: 90%;
-        right: 0%; 
+        display: none;
     }
 
     .content-more {
@@ -295,8 +293,16 @@ button {
     }
 
     .airplane-img {
-        display: absolute;
-        top: 95%;
+        display: none;
+    }
+
+    .local-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .more-content {
+        padding: 5px;
     }
 }
 
