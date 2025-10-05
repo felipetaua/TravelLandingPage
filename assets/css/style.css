@@ -255,6 +255,7 @@ button {
 @media screen and (max-width: 900px)  {
     .hero-section {
         display: block;
+        height: auto;
     }
 
     .content-hero {
@@ -372,4 +373,27 @@ button {
 
 .content-socials p {
     display: inline-block;
+}
+
+@media screen and (max-width: 900px)  {
+    .section-socials {
+        display: block;
+        text-align: center;
+
+        margin: 0 20px;
+    }
+
+    .partners-img  {
+        width: 22%;
+        align-items: center;
+        margin: 0 auto;
+        padding: 20px 5px;
+    }
+}
+
+
+@media screen and (max-width: 500px)  {
+    .content-socials {
+        width: 100%;
+    }
 }
